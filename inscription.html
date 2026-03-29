@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - GameZone</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #0f0130;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1E90FF;
+        }
+
+        .logo img {
+            height: 80px;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #1E90FF;
+        }
+
+        .slogan {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1E90FF;
+            text-shadow: 0px 0px 10px #1E90FF, 0px 0px 20px #1E90FF;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 500px;
+        }
+
+        .form-box {
+            background: #0f0135;
+            width: 400px;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #1E90FF;
+            color: white;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            color: #1E90FF;
+            text-shadow: 0 0 10px #1E90FF;
+            margin-bottom: 20px;
+        }
+
+        .form-box input, .form-box select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: #1E90FF;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background: #1466cc;
+        }
+
+        .bottom-text {
+            text-align: center;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .bottom-text a {
+            color: #1E90FF;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .bottom-text a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            background: #0f0130;
+            border-top: 2px solid #1E90FF;
+            font-size: 14px;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1E90FF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo4.png" alt="Logo">
+        </div>
+
+        <h2 class="slogan">Level up your gear</h2>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="achat.html">Acheter</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="form-box">
+            <div id="form-inscription" style="display: none;">
+                <h2>Créer un compte</h2>
+                <form id="inscriptionForm">
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Téléphone :</label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date de naissance :</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produit">Produit préféré :</label>
+                        <select id="produit" name="produit" required>
+                            <option value="">-- Choisir --</option>
+                            <option value="clavier">Claviers</option>
+                            <option value="souris">Souris</option>
+                            <option value="casque">Casques</option>
+                            <option value="pack">Packs</option>
+                            <option value="laptop">Laptops</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn-submit" onclick="validerInscription()">S'inscrire</button>
+                </form>
+
+                <p class="bottom-text">
+                    Vous avez déjà un compte ?  
+                    <a onclick="afficherConnexion()">Connectez-vous ici</a>
+                </p>
+            </div>
+
+            <div id="form-connexion">
+                <h2>Connexion</h2>
+                <div class="form-group">
+                    <label for="email-connexion">Email :</label>
+                    <input type="email" id="email-connexion" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <button class="btn-submit" onclick="seConnecter()">Se connecter</button>
+
+                <p class="bottom-text">
+                    Vous n'avez pas de compte ?  
+                    <a onclick="afficherInscription()">Créer un compte ici</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <div>
+            <div style="font-weight:700" class="slogan">GameZone</div>
+            <div class="small muted">contact@gamezone.tn | WhatsApp: +216 23 294 498</div>
+        </div> 
+        <div class="social"> 
+            <a href="https://www.facebook.com/youssef.hajsaid.5">Facebook</a>
+            <a href="https://www.instagram.com/rima.lagati?igsh=M2l1ZmZhN284djht">Instagram</a> 
+        </div>
+    </footer>
+
+    <script>
+        function afficherInscription() {
+            document.getElementById("form-connexion").style.display = "none";
+            document.getElementById("form-inscription").style.display = "block";
+        }
+
+        function afficherConnexion() {
+            document.getElementById("form-inscription").style.display = "none";
+            document.getElementById("form-connexion").style.display = "block";
+        }
+
+        function seConnecter() {
+            const email = document.getElementById('email-connexion').value;
+            const password = document.getElementById('password').value;
+            
+            if(email && password) {
+                alert("Connexion réussie !");
+                window.location.href = "achat.html";
+            } else {
+                alert("Veuillez remplir tous les champs");
+            }
+        }
+
+        function validerInscription() {
+            const prenom = document.getElementById('prenom').value;
+            const nom = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const tel = document.getElementById('tel').value;
+            const date = document.getElementById('date').value;
+            const produit = document.getElementById('produit').value;
+
+            if(prenom && nom && email && tel && date && produit) {
+                alert("Inscription réussie !");
+                window.location.href = "achat.html";
+            } else {
+                alert("Veuillez remplir tous les champs");
+            }
+        }
+    </script>
+
+</body>
+</html>

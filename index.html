@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Accueil</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            background: #0f0130;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1E90FF;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E90FF;
+            
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #1E90FF;
+        }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.hero-center {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+        .hero h1 {
+            color: #0f0135;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #0f0135;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .products {
+            padding: 20px;
+        }
+
+        .products h2 {
+            color: #0f0135;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            color: #0f0135;
+        }
+
+        .product {
+            background: #0f0135;
+            padding: 15px;
+            width: 200px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #0f0135;
+            color: blanchedalmond;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .price {
+            margin-top: 5px;
+            color: blanchedalmond;
+            font-weight: bold;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background: #0f0130;
+            border-top: 2px solid #1E90FF;
+            font-size: 14px;
+            color: white;
+        }
+        .logo img {
+            height: 80px;
+            margin-left: 20px;
+        }
+        .slogan  {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1E90FF;
+    text-shadow: 0px 0px 10px #1E90FF, 0px 0px 20px #1E90FF;
+    letter-spacing: 2px;
+}
+.side-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.side-images img {
+    width: 280px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #0f0135;
+}
+
+
+.hero-center .btn {
+    display: inline-block;
+    margin: 8px;
+}
+.name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0135;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #1E90FF;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+      <div class="logo">
+      <img src="logo4.png" alt="Logo">
+      </div>
+        <h2 class="slogan">Level up your gear</h2>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="achat.html">Acheter</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+    <div class="hero-center">
+        <h1 class="slogan">Bienvenue sur GameZone</h1>
+        <p>Votre boutique d'accessoires gaming : casques, souris, claviers, tapis…</p>
+
+        <a href="#produits" class="btn">Voir les produits</a>
+        <a href="#pack" class="btn">Voir les packs</a>
+        <a href="#laptop" class="btn">Voir les laptop</a>
+    </div>
+
+</section>
+    <section class="products" id="produits">
+        <h2 class="slogan">Nos Produits</h2>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="clavierrgb.png" alt="Clavier">
+                <h3>Clavier RGB</h3>
+                <div class="price">99,900 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="souris.png" alt="Souris">
+                <h3>Souris 6400 DPI</h3>
+                <div class="price">449,900 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="casque.png" alt="Casque">
+                <h3>Casque Gaming</h3>
+                <div class="price">278.900 TND</div>
+            </div>
+            <div class="product">
+                <img src="tapis.png" alt="Tapis">
+                <h3>Tapis RGB </h3>
+                <div class="price">48.900 TND</div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="clavier1.png" alt="Clavier">
+                <h3>Clavier RGB</h3>
+                <div class="price">90,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="souris1.png" alt="Souris">
+                <h3>Souris 6400 DPI</h3>
+                <div class="price">70,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="casque1.png" alt="Casque">
+                <h3>Casque Gaming</h3>
+                <div class="price">240,000 TND</div>
+            </div>
+            <div class="product">
+                <img src="tapis1.png" alt="Tapis">
+                <h3>Tapis RGB </h3>
+                <div class="price">120,000TND</div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="clavier2.png" alt="Clavier">
+                <h3>Clavier RGB</h3>
+                <div class="price">70,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="souris2.png" alt="Souris">
+                <h3>Souris 6400 DPI</h3>
+                <div class="price">520,000TND</div>
+            </div>
+
+            <div class="product">
+                <img src="casque2.png" alt="Casque">
+                <h3>Casque Gaming</h3>
+                <div class="price">50,000TND</div>
+            </div>
+            <div class="product">
+                <img src="tapis2.png" alt="Tapis">
+                <h3>Tapis RGB </h3>
+                <div class="price">30,000TND</div>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="pack">
+        <h2 class="slogan">Nos Packs </h2>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="pack1.png" alt="pack1">
+                <h3>SPIRIT OF GAMER PACK 4EN1 PRO-MKH5</h3>
+                <div class="price">176,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="pack2.png" alt="pack2">
+                <h3>REDRAGON PACK 5EN1 </h3>
+                <div class="price">389,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="pack3.png" alt="pack3">
+                <h3>PACK GAMING – WHITE EDITION</h3>
+                <div class="price">135,000 TND</div>
+            </div>
+            <div class="product">
+                <img src="pack4.png" alt="pack4">
+                <h3>PACK GAMING REDRAGON </h3>
+                <div class="price">389,000 TND</div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="pack5.png" alt="pack5">
+                <h3>REDRAGON PACK 5EN1</h3>
+                <div class="price">199,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="pack6.png" alt="pack6">
+                <h3>PACK GAMER 4EN1</h3>
+                <div class="price">340,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="pack7.png" alt="pack7">
+                <h3>PACK GAMER RGB SOG</h3>
+                <div class="price">259.000 TND</div>
+            </div>
+            <div class="product">
+                <img src="pack8.png" alt="pack8">
+                <h3>The G-Lab COMBO ARGON E (FR)</h3>
+                <div class="price">145,000TND</div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="products" id="laptop">
+        <h2 class="slogan">Nos Laptops</h2>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="laptop1.png" alt="pack1">
+                <h3>PC Portable Gamer MSI | i7 10è Gén | RTX 2070 | 512 Go SSD | 16GB </h3>
+                <div class="price">5 059,000  TND</div>
+            </div>
+
+            <div class="product">
+                <img src="laptop2.png" alt="pack2">
+                <h3>GIGABYTE G6 MF | i7-13620H | RTX 4050 | SSD 1TB | 16GB  </h3>
+                <div class="price">3 379,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="laptop3.png" alt="pack3">
+                <h3>MSI Cyborg 15 | Ultra 5 210H | RTX 5060 | 512Gb Nvme | 8 GB DDR5 </h3>
+                <div class="price">3 899,000 TND</div>
+            </div>
+            <div class="product">
+                <img src="laptop4.png" alt="pack4">
+                <h3>PC Portable - ASUS TUF Gaming A15 FA506NFR AMD | RTX 2050 | SSD 512 | 8G  </h3>
+                <div class="price">2 099,000 TND</div>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="laptop5.png" alt="pack5">
+                <h3>Pc Portable Lenovo Ryzen 5 | RTX 4050 | 512Go SSD Gris | 8Go</h3>
+                <div class="price">2 639,000  TND</div>
+            </div>
+
+            <div class="product">
+                <img src="laptop6.png" alt="pack6">
+                <h3>MSI Crosshair 18 HX | i7-255HX  | RTX 5060 | 512 GB NVME | 16GB DDR5</h3>
+                <div class="price">6 296,000 TND</div>
+            </div>
+
+            <div class="product">
+                <img src="laptop7.png" alt="pack7">
+                <h3>PC Portable Gamer - Lenovo  Ryzen 5 5600H  | RTX 3050 4GB | 512 Go SSD | 8 Go</h3>
+                <div class="price">2 249,000 TND</div>
+            </div>
+            <div class="product">
+                <img src="laptop8.png" alt="pack8">
+                <h3>PC PORTABLE GAMER MSI KATANA  i5-12500H | RTX 3050 TI | 512 Go SSD  | 16 Go </h3>
+                <div class="price">3 648,000TND</div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="contact" >
+        <div>
+             <div style="font-weight:700" class="slogan" >GameZone</div>
+              <div class="small muted">contact@gamezone.tn  WhatsApp: +216 23 294 498</div>
+        </div> 
+             <div class="social"> 
+                <a href="https://www.facebook.com/youssef.hajsaid.5" target="_blank">Facebook</a>
+                 <a href="https://www.instagram.com/rima.lagati?igsh=M2l1ZmZhN284djht" target="_blank">Instagram</a> 
+            </div>
+    </footer>
+
+</body>
+</html>
