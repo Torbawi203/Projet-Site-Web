@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web-app:
+    build: .
+    ports:
+      - "8080:80" # Access your site at http://localhost:8080
+    restart: always
+
+  # BONUS: Second service to simulate multi-service architecture
+  log-viewer:
+    image: httpd:alpine
+    ports:
+      - "8081:80"
