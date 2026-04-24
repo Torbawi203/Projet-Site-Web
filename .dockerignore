@@ -1,0 +1,6 @@
+.git
+node_modules
+README.md
+.github
+Dockerfile
+docker-compose.yml
